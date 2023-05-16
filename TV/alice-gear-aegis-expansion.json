@@ -29,10 +29,17 @@
     "Server1":"https://lvturbo.com/e/aou0p6u8faa9",
     "Server2":"https://dooood.com/e/45q63zr6oj8v",
     "Server3":"https://streamtape.com/e/P8GXM14x8ms0j4p/Episode_5.mp4"
-  },{
+  },
+  {
     "Episode":"Episode 6",
     "Server1":"https://lvturbo.com/e/gwgairx7hc7m",
     "Server2":"https://dooood.com/e/dhsc969004hi",
     "Server3":"https://streamtape.com/e/1PZvq3yeqATe4eL/Episode_6.mp4"
+  },
+  {
+    "Episode":"Episode 7",
+    "Server1":"https://louishide.com/e/0vmlkotjcao1",
+    "Server2":"https://filemoon.wf/e/6dq9he1rm2ay/EP_7_v0_1684153513_720p",
+    "Server3":"https://lvturbo.com/e/dbz7tuh8gens"
   }
 ]
