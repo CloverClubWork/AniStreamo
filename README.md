@@ -1,26 +1,15 @@
-# AniBrowser - Stream Anime for Free
-~ Is an application that provides free streaming anime from various site's without ad interruptions.
+# AniStreamo
+`Stream Newest & Oldest Anime for Free. This application is for android users only. You can stream anime without worrying ads that could interrupt your streaming. We use different types of video hosting server that usually used by different anime streaming sites. Although, we are currently using free hosting server, so there's still ads could be seen. Rest assurd that this application would not block them but could prevent them from sending you to another page/application and continue your streaming. Some servers like Streamtape and Doodstream might have window popup ads, you can click them to disappeared. Since we currently used free server, some of the video couldn't not be played at highest (1080pHD) video quality. Please support us to upgrade servers for better video quality experience.`
 
-### Why use AniBrowser?
-- Ad Interruptions Blocked (This application did not blocked ads including Popup Ad as it is but instead prevented them from sending you to another page which would stop your streaming and prove to be annoying)
+### Servers used
+- StreamHide
+- StreamSB
+- Streamtape
+- Streamlare
+- Filemoon
+- Doodstream
+- Mp4upload
 
-### Server supported
-- [9Anime](https://9anime.to/home)
-- [Animepahe](https://animepahe.com/)
-- [Anihdplay](https://anihdplay.com/)
-- [Animixplay](https://animixplay.sc/)
-- [Chia-Anime](https://chia-anime.cc/)
+`We are just getting started. If you encounter any problems, please send report to us on our [bug-report]("https://discord.gg/MtYsqUsZ" ) discord server. The app is still in development, to receive what anime has been updated or added, please join on our [anime-release]("https://discord.gg/59h9bjj7") discord server. To chat with other users, please join on our [General]("https://discord.gg/kBCsDsCF") discord server.`
 
-### Report/Suggest Server
-To report problems or suggest server, please commit it on [Issue](https://github.com/CloverClubWork/AniStreamo/issues)
-
-### Disclaimer
-`We do not owned any contents provided by this application. It is made for entertainment purposes only`
-
-### Support Us
-If you like my application, please consider to [support us](https://ko-fi.com/skyfreak). Thank you
-
-### Download AniBrowser
-Download app below
-- [Download Link 1 (Direct)](https://github.com/CloverClubWork/AniStreamo/releases/download/v1.0_final/AniBrowser.apk)
-- [Download Link 2 (ApkFab)](https://apkfab.com/anibrowser/com.anibrowser.cloverproject/apk?h=a5e37ae76daa28a5f0e992dbdb255199b664b321e56a7c428d8f8bda4269a9c0)
+### Download [AniStreamo]("https://github.com/CloverClubWork/AniStreamo/releases/download/AniStreamo-v1.0_beta/AniStreamo_v1.0_beta.apk")
