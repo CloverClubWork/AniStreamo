@@ -1,0 +1,81 @@
+{
+  "Episodes":[
+    {
+      "Episode":1,
+      "Thumbnail":"https://cloudfront-cdn-images.com/1bhmayqfs5hl_t.jpg",
+      "title":"Meet the Angel",
+      "string":"https://sbrapid.com/e/1bhmayqfs5hl"
+    },
+    {
+      "Episode":2,
+      "Thumbnail":"https://cloudfront-cdn-images.com/xwmozq4st3ll_t.jpg",
+      "title":"Dinner with the Angel",
+      "string":"https://sbrapid.com/e/xwmozq4st3ll"
+    },
+    {
+      "Episode":3,
+      "Thumbnail":"https://cloudfront-cdn-images.com/5i8ngleiuy3l_t.jpg",
+      "title":"Reward for the Angel",
+      "string":"https://sbrapid.com/e/5i8ngleiuy3l"
+    },
+    {
+      "Episode":4,
+      "Thumbnail":"https://cloudfront-cdn-images.com/v68x2amnm189_t.jpg",
+      "title":"The Angel in the Christmas",
+      "string":"https://sbrapid.com/e/v68x2amnm189"
+    },
+    {
+      "Episode":5,
+      "Thumbnail":"https://cloudfront-cdn-images.com/vafxc0uv2uo0_t.jpg",
+      "title":"Hatsumode with the Angel",
+      "string":"https://sbrapid.com/e/vafxc0uv2uo0"
+    },
+    {
+      "Episode":6,
+      "Thumbnail":"https://cloudfront-cdn-images.com/u7w6qotdbqnd_t.jpg",
+      "title":"A Gift from the Angel",
+      "string":"https://sbrapid.com/e/u7w6qotdbqnd"
+    },
+    {
+      "Episode":7,
+      "Thumbnail":"https://cloudfront-cdn-images.com/v097f8skq2zw_t.jpg",
+      "title":"A Promise with the Angel",
+      "string":"https://sbrapid.com/e/v097f8skq2zw"
+    },
+    {
+      "Episode":8,
+      "Thumbnail":"https://cloudfront-cdn-images.com/aodjkfe2gzdx_t.jpg",
+      "title":"The Angel in the New Term",
+      "string":"https://sbrapid.com/e/aodjkfe2gzdx"
+    },
+    {
+      "Episode":9,
+      "Thumbnail":"https://cloudfront-cdn-images.com/cgiqgjkstpyj_t.jpg",
+      "title":"Going out with the Angel",
+      "string":"https://sbrapid.com/e/cgiqgjkstpyj"
+    },
+    {
+      "Episode":10,
+      "Thumbnail":"https://cloudfront-cdn-images.com/kq3jh9id9v5l_t.jpg",
+      "title":"The Angel in the Dream",
+      "string":"https://sbrapid.com/e/kq3jh9id9v5l"
+    },
+    {
+      "Episode":11,
+      "Thumbnail":"https://cloudfront-cdn-images.com/z3u846qtxlhs_t.jpg",
+      "title":"The Angel Next Door Spoils Me Rotten",
+      "string":"https://sbrapid.com/e/z3u846qtxlhs"
+    },
+    {
+      "Episode":12,
+      "Thumbnail":"https://cloudfront-cdn-images.com/1q4qdlzwvaj3_t.jpg",
+      "title":"Say Goodbye to my Cowardice",
+      "string":"https://sbrapid.com/e/1q4qdlzwvaj3"
+    }
+  ],
+  "pagination":{
+    "last_page":0,
+    "current_page":1,
+    "has_next_page": false
+  }
+}
