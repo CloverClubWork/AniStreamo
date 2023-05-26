@@ -1,5 +1,5 @@
 {
-  "Episodes":[
+  "episodes":[
     {
       "Episode":1,
       "Thumbnail":"https://cloudfront-cdn-images.com/1bhmayqfs5hl_t.jpg",
@@ -76,6 +76,6 @@
   "pagination":{
     "last_page":1,
     "current_page":1,
-    "has_next_page": false
+    "has_next_page": "false"
   }
 }
