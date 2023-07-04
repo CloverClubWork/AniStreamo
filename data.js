@@ -6,7 +6,7 @@ let data = [
 ];
 
 let ul = document.getElementById("ul");
-for(let x = 0; x <= data.length; x++){
+for(let x = 0; x < data.length; x++){
   let li = document.createElement("li");
   li.setAttribute("class","list-group-item");
   let div = document.createElement("div");
