@@ -5,11 +5,28 @@ let data = [
   }
 ];
 
-let ul = $(".list-group");
+let ul = document.getElementById("ul");
 for(let x = 0; x <= data.length; x++){
-  let string = data[x].link;
-  let stringTitle = data[x].name;
-  let htmlData = "<li class='list-group-item'><div class='vid-container'><iframe frameborder='0' allowfullscreen='' scrolling='no' allow='autoplay;fullscreen' class='video-player' src='" +string+ "'></iframe></div><h4 class='title'>"+stringTitle+"</h4></li>";
-  ul.append(htmlData);
-  console.log(ul);
+  let li = document.createElement("li");
+  li.setAttribute("class","list-group-item");
+  let div = document.createElement("div");
+  div.setAttribute("class", "vid-container");
+  let iframe = document.createElement("iframe");
+  iframe.setAttribute("class","video-player");
+  iframe.setAttribute("allowfullscreen","");
+  iframe.setAttribute("frameborder","0");
+  iframe.setAttribute("scrolling","no");
+  iframe.setAttribute("allow","autoplay;fullscreen");
+  iframe.setAttribute("src","");
+  let h4 = document.createElement("h4");
+  h4.setAttribute("class","title");
+  
+  h4.innerHTML = data[x].name;
+  iframe.src = data[x].link;
+  
+  div.appendChild(iframe);
+  li.appendChild(div);
+  li.appendChild(h4);
+  ul.appendChild(li);
+ 
 }
