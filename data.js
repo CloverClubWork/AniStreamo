@@ -9,7 +9,7 @@ let data = [
   }
 ];
 
-let ul = document.getElementById("ul");
+let ul = $("#ul");
 for(let x = 0; x < data.length; x++){
   let li = document.createElement("li");
   li.setAttribute("class","list-group-item");
