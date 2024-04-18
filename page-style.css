@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap');
+*{
+  font-family: "Poppins", Sans-Serif;
+}
+body{
+  background-color: rgba(15, 14, 23, 1);
+}
+.main-container{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+}
+.main-container::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1000px; /* Adjust the height of the fade effect */
+  background: linear-gradient(to bottom, rgba(15, 14, 23, 0), rgba(15, 14, 23, 1));
+}
+.nav-item{
+  background-color: #26212173;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 8px;
+}
+.nav-item i{
+  font-size: 13pt;
+}
+.content-container{
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(3px);
+  background-color: rgba(15, 14, 23, 0);
+}
+.page-header{
+  max-width: 100%;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+.page-header #page-cover{
+  width: 150px;
+  height: 210px;
+  border-radius: 5px;
+}
+.page-header-actions{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.page-header-actions #watch-btn{
+  width: auto;
+  height: 50px;
+  padding: 0 10px;
+  background-color: #f90b7a;
+  border: none;
+  border-radius: 5px;
+  font-size: 11pt;
+}
+.page-header-actions #watch-btn i{
+  font-size: 12pt;
+  margin-right: 8px;
+}
+.page-header-actions button{
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #0b0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-header-actions button i{
+  font-size: 12pt;
+}
+.page-item-titles{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.page-item-titles h5{
+  width: inherit;
+  text-align: center;
+  font-size: 13pt;
+}
+.page-item-titles p{
+  width: inherit;
+  text-align: center;
+  font-size: 9pt;
+}
+.page-more-info{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info-container{
+  max-width: 100%;
+  height: 150px;
+  margin: 30px 25px 0 25px;
+  position: relative;
+  overflow: hidden;
+}
+.info-container::after{
+  content: "Read More";
+  display: flex;
+  color: rgba(255, 6, 98, 1);
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; /* Adjust the height of the fade effect */
+  background: linear-gradient(to bottom, rgba(15, 14, 23, 0), rgba(15, 14, 23, 1));
+}
+.info-container #page-synopsis, #page-synopsis i{
+  font-size: 9pt;
+}
+.disable-page-synopsis::after{
+  display: none !important;
+}
+.info-extra, #genre-list{
+  max-width: 100%;
+  margin: 8px 0;
+  display: flex;
+  overflow: scroll;
+  gap: 8px;
+}
+.info-extra span, #genre-list span{
+  background-color: #1a1919;
+  height: auto;
+  text-align: center;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 8pt;
+}
+.episode-container{
+  width: 100%;
+  height: auto;
+}
+.episode-header{
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7px;
+  padding: 8px;
+}
+.episode-header h5{
+  font-size: 14pt;
+  width: 100%;
+}
+.pagination-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+#prevBtn, #nextBtn{
+  padding: 0 8px;
+  border-radius: 5px;
+}
+#prevBtn:active, #nextBtn:active{
+  background-color: #1a1a1a;
+}
+.episode-controls{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 7px;
+}
+.episode-container input[type=search]{
+  width: 100px;
+  font-size: 8pt;
+  border: none;
+  background-color: #1a1a1a;
+  padding: 8px;
+  border-radius: 5px;
+}
+#episode-list{
+  max-width: 100%;
+  list-style-type: none;
+  height: auto;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  gap: 8px;
+}
+#episode-list li{
+  min-width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px
+}
+#episode-list li:active{
+  background-color: #94BDFF
+}
+#episode-list li span{
+  font-size: 10pt;
+}
+#episode-list span:first-child{
+  color: #f90b7a;
+}
+.comment-container{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.comment-container h5{
+  font-size: 14pt;
+}

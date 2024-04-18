@@ -1,33 +1,98 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="title" content="Novel Senpai"/>
-    <meta name="description" content="Download any novels in Epub & Pdf file format"/>
-    <title>Novel Senpai</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet"/>
-    <style>
-      body{
-        margin: 0;
-        padding: 0;
-        max-width: 100%;
-        height: 100%;
-      }
-      .body-container{max-width: 100%;height: 100%;display: flex;flex-direction: column;justify-content: center;padding: 2em}
-    </style>
-  </head>
-  <body class="bg-dark">
-    
-    <div class="body-container">
-      
-      <h3 class="text-light">Welcome to NovelSenpai</h3>
-      <p class="text-light"><i>Download novels for free</i></p>
-      
-    </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  </body>
+<!doctype html>
+<html lang="en">  
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/8d333124e2.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="index.css" />
+        <title>AniLuck</title>
+    </head>
+    <body>
+       <div class="loading-container">
+         <div class="loader"></div>
+       </div>
+       <div class="modal-menu-container">
+         <div class="menu-content">
+           <div class="modal-header">
+             <span id="close-modal">
+               <i class="fa-solid fa-xmark"></i>
+             </span>
+           </div>
+           <div class="modal-item">
+             <a href="">Home</a>
+           </div>
+           <div class="modal-item">
+             <a href="">Follow Us</a>
+           </div>
+           <div class="modal-item">
+             <a href="">Report Bug</a>
+           </div>
+           <div class="modal-item">
+             <a href="">Support Us</a>
+           </div>
+         </div>
+       </div>
+        <div class="main-container">
+            <nav class="navigation">
+                <div class="nav-item"><i class="web-name">ANILUCK</i></div>
+                <div class="nav-item menu-btn"><i class="fa-solid fa-bars"></i></div>
+            </nav>
+
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p><i class="fa-solid fa-fire"></i> New Released</p>
+                    <h5 id="hero-title"></h5>
+                    <p id="hero-synopsis"></p>
+                    <div class="hero-indicator-container">
+                        <button id="hero-btn">Visit Page</button>
+                        <div class="hero-indicator">
+                            <span
+                                id="indicator indicator-1"
+                                class="indicator-selected"
+                                data-index="0"
+                            ></span>
+                            <span
+                                id="indicator indicator-2"
+                                data-index="1"
+                            ></span>
+                            <span
+                                id="indicator indicator-3"
+                                data-index="2"
+                            ></span>
+                            <span
+                                id="indicator indicator-4"
+                                data-index="3"
+                            ></span>
+                            <span
+                                id="indicator indicator-5"
+                                data-index="4"
+                            ></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-container">
+                <h5><i class="fa-solid fa-fire"></i> New Released</h5>
+                <ul id="item-display"></ul>
+            </div>
+            <div class="item-container">
+              <h5><i class="fa-solid fa-fire"></i> Top Rated</h5>
+              <ul id="item-display-top"></ul>
+            </div>
+            <div class="item-container">
+              <h5><i class="fa-solid fa-fire"></i> Most Popular</h5>
+              <ul id="item-display-popular"></ul>
+            </div>
+        </div>
+
+        <script
+            src="jquery-3.7.1.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+        <script src="index.js"></script>
+    </body>
 </html>

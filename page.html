@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="type" content="webpage"/>
+        <meta name="og:type" content="webpage">
+        <script
+            src="https://kit.fontawesome.com/8d333124e2.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="page-style.css" />
+        <title>AniLuck</title>
+    </head>
+
+    <body>
+        <div class="loading-container">
+            <div class="loader"></div>
+        </div>
+
+        <div class="main-container">
+            <div class="content-container">
+                <nav class="navigation">
+                    <div class="nav-item" id="homeBtn">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="nav-item">
+                      <i class="fa-solid fa-flag"></i>
+                    </div>
+                </nav>
+                <div class="page-header">
+                    <img id="page-cover" src="" alt="Cover" loading="lazy" />
+                    <div class="page-header-actions">
+                        <button id="add-btn" type="button">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <button id="watch-btn" type="button">
+                            <i class="fa-solid fa-play"></i> WATCH NOW
+                        </button>
+                        <button id="share-btn" type="button">
+                            <i class="fa-solid fa-share"></i>
+                        </button>
+                    </div>
+                    <div class="page-item-titles">
+                      <h5 id="page-title-jp"></h5>
+                      <p id="page-title-en"></p>
+                    </div>
+                    <div class="page-more-info">
+                      <div class="info-container">
+                        <p id="page-synopsis"></p>
+                        <div class="info-extra">
+                          <span id="page-status"></span>
+                          <span id="page-format"></span>
+                          <span id="page-score"></span>
+                        </div>
+                        <div id="genre-list"></div>
+                      </div>
+                    </div>
+                    <div class="episode-container">
+                      <div class="episode-header">
+                        <h5>Episodes</h5>
+                        <div class="pagination-container">
+                          <div class="prev-btn" id="prevBtn">
+                            <i class="fa-solid fa-angle-left"></i>
+                          </div>
+                          <div class="next-btn" id="nextBtn">
+                            <i class="fa-solid fa-angle-right"></i>
+                          </div>
+                        </div>
+                        <div class="episode-controls">
+                          <input type="search" name="search-episode" id="searchEpisode" placeholder="Find Episode" />
+                          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                      </div>
+                      <ul id="episode-list"></ul>
+                    </div>
+                    <div class="comment-container">
+                      <h5>Comments</h5>
+                      <div id="disqus_thread"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="jquery-3.7.1.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+        <script
+            src="pages-script.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+        <script>
+          $(document).ready(function(){
+            $('#homeBtn').click(function(){
+              window.location.href = '/';
+            });
+            $('#share-btn').click(function() {
+              if (navigator.share) {
+                navigator.share({
+                  title: document.title,
+                  url: window.location.href
+                }).then(() => {
+                  console.log('Webpage shared successfully');
+                }).catch((error) => {
+                  console.error('Error sharing webpage:', error);
+                });
+              } else {
+                // Fallback for browsers that do not support the Web Share API
+                alert('Web Share API is not supported in your browser.');
+              }
+            });
+          });
+        </script>
+        <script>
+          (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document,
+              s = d.createElement('script');
+            s.src = 'https://aniluck.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <!-- <script id="dsq-count-scr" src="//aniluck.disqus.com/count.js" async></script> -->
+    </body>
+</html>
