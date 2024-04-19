@@ -16,13 +16,14 @@ $(document).ready(function() {
         $('title').text('Watch '+results.title_jp);
         
         const description = synopsis(results.synopsis);
-        
-        $('head').append("<meta name='description' content='"+description+"'/>")
-        $('head').append("<meta name='og:description' content='"+description+"'/>")
-        $('head').append('<meta name="title" content="'+results.title_jp+'"/>')
-        $('head').append('<meta name="og:title" content="'+results.title_jp+'"/>')
-        $('head').append('<meta name="image" content="'+results.backdrops+'"/>')
-        $('head').append('<meta name="og:image" content="'+results.backdrops+'"/>')
+        $('meta[name="title"]').attr('content', results.title_jp);
+        $('meta[property="og:title"]').attr('content', results.title_jp);
+        $('meta[name="description"]').attr('content', description);
+        $('meta[property="og:description"]').attr('content', description);
+        $('meta[name="url"]').attr('content', window.location.href);
+        $('meta[property="og:url"]').attr('content', window.location.href);
+        $('meta[name="image"]').attr('content', results.backdrops);
+        $('meta[property="og:image"]').attr('content', results.backdrops);
         
         $(".main-container").css(
           "background-image",
@@ -64,9 +65,9 @@ $(document).ready(function() {
           if (navigator.share) {
             navigator.share({
               title: document.title,
-              text: description,
+              text: document.querySelector('meta[name="description"]').getAttribute('content'),
               url: window.location.href,
-              files: imageWebPage
+              files: [document.querySelector('meta[property="og:image"]').getAttribute('content')]
             }).then(() => {
               console.log('Webpage shared successfully');
             }).catch((error) => {
