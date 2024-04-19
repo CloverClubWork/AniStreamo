@@ -59,12 +59,14 @@ $(document).ready(function() {
         });
 
         splitEpisode();
-        
+        const imageWebPage = $("<meta name='og:image'>").attr('content');
         $('#share-btn').click(function() {
           if (navigator.share) {
             navigator.share({
               title: document.title,
-              url: window.location.href
+              text: description,
+              url: window.location.href,
+              files: imageWebPage
             }).then(() => {
               console.log('Webpage shared successfully');
             }).catch((error) => {
