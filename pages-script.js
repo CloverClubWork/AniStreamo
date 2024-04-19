@@ -60,6 +60,22 @@ $(document).ready(function() {
 
         splitEpisode();
         
+        $('#share-btn').click(function() {
+          if (navigator.share) {
+            navigator.share({
+              title: document.title,
+              url: window.location.href
+            }).then(() => {
+              console.log('Webpage shared successfully');
+            }).catch((error) => {
+              console.error('Error sharing webpage:', error);
+            });
+          } else {
+            // Fallback for browsers that do not support the Web Share API
+            alert('Web Share API is not supported in your browser.');
+          }
+        });
+        
         // Comments
         var disqus_config = function() {
           this.page.url = window.location.href; // Replace PAGE_URL with your page's canonical URL variable
