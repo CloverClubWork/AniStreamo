@@ -65,7 +65,6 @@ $(document).ready(function() {
           if (navigator.share) {
             navigator.share({
                 title: document.title,
-                text: document.querySelector('meta[name="description"]').getAttribute('content'),
                 url: window.location.href
               }).then(() => {
                 console.log('Successfully shared');
