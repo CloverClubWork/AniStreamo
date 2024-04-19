@@ -60,24 +60,6 @@ $(document).ready(function() {
         });
 
         splitEpisode();
-        const imageWebPage = $("<meta name='og:image'>").attr('content');
-        $('#share-btn').click(function() {
-          if (navigator.share) {
-            navigator.share({
-              title: document.title,
-              text: document.querySelector('meta[name="description"]').getAttribute('content'),
-              url: window.location.href,
-              files: [document.querySelector('meta[property="og:image"]').getAttribute('content')]
-            }).then(() => {
-              console.log('Webpage shared successfully');
-            }).catch((error) => {
-              console.error('Error sharing webpage:', error);
-            });
-          } else {
-            // Fallback for browsers that do not support the Web Share API
-            alert('Web Share API is not supported in your browser.');
-          }
-        });
         
         // Comments
         var disqus_config = function() {
